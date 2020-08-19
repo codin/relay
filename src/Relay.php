@@ -44,7 +44,7 @@ class Relay implements RequestHandlerInterface
         return $middleware;
     }
 
-    public function handle(ServerRequestInterface $request) : ResponseInterface
+    public function handle(ServerRequestInterface $request): ResponseInterface
     {
         return $this->nextMiddleware()->process($request, $this);
     }

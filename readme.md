@@ -10,7 +10,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 
 // Define some Middlewares
 $response = new class() implements MiddlewareInterface {
-    public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface {
+    public function process(RequestInterface $request, RequestHandlerInterface $handler): ResponseInterface {
         $psr17Factory = new Nyholm\Psr7\Factory\Psr17Factory();
         $responseBody = $psr17Factory->createStream('');
         return $psr17Factory->createResponse(200)->withBody($responseBody);
