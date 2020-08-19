@@ -22,7 +22,7 @@ class Relay implements RequestHandlerInterface
      */
     protected $resolver;
 
-    public function __construct(array $queue, ?callable $resolver = null)
+    public function __construct(array $queue, callable $resolver = null)
     {
         if (count($queue) === 0) {
             throw new RelayException('queue cannot be empty');
