@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Codin;
+namespace spec\Codin\Relay;
 
 use PhpSpec\ObjectBehavior;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codin;
+namespace Codin\Relay;
 
 use Closure;
 use Psr\Http\Message\ResponseInterface;

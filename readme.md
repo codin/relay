@@ -41,6 +41,6 @@ $psr17Factory = new Nyholm\Psr7\Factory\Psr17Factory();
 $request = $psr17Factory->createRequest('GET', 'http://tnyholm.se');
 
 // Run middlewares on a request to create a response
-$relay = new Codin\Relay([$cors, $exceptions, $response]);
+$relay = new Codin\Relay\Relay([$cors, $exceptions, $response]);
 $response = $relay->handle($request);
 ```
