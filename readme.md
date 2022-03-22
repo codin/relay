@@ -1,5 +1,9 @@
 # Tiny PSR-15 Http Server Middleware Processor
 
+![version](https://img.shields.io/github/v/tag/codin/relay)
+![workflow](https://img.shields.io/github/workflow/status/codin/relay/Composer)
+![license](https://img.shields.io/github/license/codin/relay)
+
 Example
 
 ```php
